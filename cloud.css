@@ -117,7 +117,7 @@ button {
 
 #slider figure {
     position: relative;
-    width: 556%;
+    width: 500%;
     margin: 0;
     left: 0;
     animation: 50s slider infinite ease-in-out;
@@ -141,46 +141,46 @@ button {
     }
 
     16% {
-        left: -100%;
+        left: -90%;
 
     }
 
     28% {
-        left: -100%;
+        left: -90%;
 
     }
 
 
     30% {
-        left: -200%;
+        left: -180%;
 
     }
 
     42% {
-        left: -200%;
+        left: -180%;
 
     }
 
 
     44% {
-        left: -300%;
+        left: -270%;
 
     }
 
 
     56% {
-        left: -300%;
+        left: -270%;
 
     }
 
 
     58% {
-        left: -400%;
+        left: -360%;
 
     }  
 
     70% {
-        left: -400%;
+        left: -360%;
 
     }  
 

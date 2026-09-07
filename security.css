@@ -116,7 +116,7 @@ button {
 
 #slider figure {
     position: relative;
-    width: 556%;
+    width: 500%;
 
     margin: 0;
     left: 0;
@@ -141,46 +141,46 @@ button {
     }
 
     12% {
-        left: -100%;
+        left: -90%;
 
     }
 
     22% {
-        left: -100%;
+        left: -90%;
 
     }
 
 
     24% {
-        left: -200%;
+        left: -180%;
 
     }
 
     34% {
-        left: -200%;
+        left: -180%;
 
     }
 
 
     36% {
-        left: -300%;
+        left: -270%;
 
     }
 
 
     46% {
-        left: -300%;
+        left: -270%;
 
     }
 
 
     48% {
-        left: -400%;
+        left: -360%;
 
     }  
 
     58% {
-        left: -400%;
+        left: -360%;
 
     }  
 
