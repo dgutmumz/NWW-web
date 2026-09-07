@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="refresh" content="8; URL=home.html" />
+    <title>NWW</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   
+    <div class="container">
+        <div class="nav-wrapper">
+            
+            <div class="right-nav">
+                <div class="NWW">
+                    <div><img src="Images-NWW/NWW-logo-small.png" alt="Logo for NWW"></div>  
+                </div>
+               <a href="index.html"> <button type="button" formaction="index.html">Intro</button></a>
+         
+            </div>
+
+            <div class="left-nav">
+                <div class="nav-link-wrapper">           
+                    <a href="home.html">HOME</a>  
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="network.html">NETWORK</a>
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="security.html">SECURITY</a>
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="cloud.html">Cloud</a>
+                </div>   
+                <div class="nav-link-wrapper">      
+                    <a href="compliance.html">COMPLIANCE</a>
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="index.html"> <button type="button" formaction="index.html">Contact Us</button></a>
+                </div>
+                  
+            </div>  
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <img src="Images-NWW/Intro.jpg" width="60%"> 
+
+
+        <div class="text-wrapper">
+            <div class="title">  Commited to Customer & Technology </div>
+            <P></P>
+            <div class="subtitle"> High quality services for your IT</div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+    
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+       portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken'); 
+   
+       })
+
+       portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken'); 
+   
+       })
+    })
+     
+</script>
+
+
+</html>

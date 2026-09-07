@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>NWW</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+   
+    <div class="container">
+        <div class="nav-wrapper">
+            
+            <div class="right-nav">
+                <div class="NWW">
+                    <div><a href="index.html"><img src="Images-NWW/NWW-logo-small.png" alt="Logo for NWW"></a></div>  
+
+                </div>
+              
+         
+            </div>
+
+            <div class="left-nav">
+                <div class="nav-link-wrapper">           
+                    <a href="home.html">HOME</a>  
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="network.html">NETWORK</a>
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="security.html">SECURITY</a>
+                </div>   
+                <div class="nav-link-wrapper">  
+                    <a href="cloud.html">Cloud</a>
+                </div>   
+                <div class="nav-link-wrapper">      
+                    <a href="compliance.html">COMPLIANCE</a>
+                </div>   
+                <div class="nav-link-wrapper"  active-nav-link>  
+                    <a href="contact.html"> <button type="button" formaction="index.html">Contact Us</button></a>
+                </div>
+                  
+            </div>  
+        </div>
+    
+
+
+        <div id="slider">
+            <figure>
+             
+
+                <a href="network.html">
+                    <img src="Images-NWW/Contact Us.png" width="400px">
+                </a>
+
+
+            </figure>
+
+        </div>
+
+        <div class="Redline">       </div> 
+    
+        <div class="flipper">   
+
+
+    
+            <a href="security.html">
+                <div class="image-container fade1">
+                    <img src="Images-S/Icon-phone2.png">   
+                </div>            
+            </a>   
+                
+    
+            <a href="wireless.html">
+                <div class="image-container fade2">
+                    <img src="Images-S/Icon-mail2.png">   
+                </div>
+            </a>
+
+            <a href="wireless.html">
+                <div class="image-container fade3">
+                    <img src="Images-S/Icon-www.png">   
+                </div>
+            </a>
+
+            <a href="cloud.html">
+                <div class="image-container fade4">
+                    <img src="Images-S/Icon-phone.png">   
+                </div>
+            </a>
+            
+
+        </div>
+
+        <div class="Redline">       </div>
+
+
+    </div>
+
+
+    <footer>
+                             &#169; 2017-2021 &ensp;&ensp;&ensp;  Copy Right of Networks Work, Inc. 
+    </footer>
+
+</div>
+
+    
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+       portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken'); 
+   
+       })
+
+       portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken'); 
+   
+       })
+    })
+     
+</script>
+
+
+</html>

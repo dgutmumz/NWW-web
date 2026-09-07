@@ -1,0 +1,364 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #f5ebdf;
+    background-image: url(Images/animation-2.gif);
+    background-size: cover;
+    font-family: "lato", arial, sans-serif;
+  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+
+.nav-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 10px;
+    padding-bottom:  0px;
+    padding-right: 80px;
+    border-bottom: #e8491d 5px solid;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.left-nav {
+    display: flex;
+}
+
+
+.right-nav {
+    display: flex;
+    width: 15%;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+
+button {
+    color: #fbfcfd;
+    padding: 5px 25px;
+    background:rgb(214, 38, 15);
+    border: 1px solid rgb(211, 13, 13);
+    border-radius: 10px;
+    outline: rgb(27, 30, 184);
+    cursor: pointer;
+
+}
+
+.nav-wrapper > .left-nav > div {
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: uppercase
+
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #252527c4;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid black;
+
+}
+
+.nav-link-wrapper a:hover {
+    color: darkblue;
+    text-shadow: darkmagenta;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.active-nav-link  {
+    color: darkblue;
+    text-shadow: darkmagenta;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(204, 19, 19);
+}
+
+.active-nav-link  a{
+    color: rgb(0, 0, 0) !important;
+    
+}
+.right-nav {
+    display: flex;
+    margin-right: 50px;
+    
+}
+
+
+
+
+#slider {
+    overflow: hidden;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 00px;
+    background: rgb(183, 208, 241);
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+#slider figure {
+    position: relative;
+    width: 500%;
+
+    margin: 0;
+    left: 0;
+    animation: 60s slider infinite ease-in-out;
+}
+
+#slider figure img {
+    padding-left: 0px;
+    padding-top: 0px;
+    float: left;
+    width: 20%;
+    
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    
+    12% {
+        left: 0;
+    }
+
+    14% {
+        left: -100%;
+
+    }
+
+    26% {
+        left: -100%;
+
+    }
+
+
+    28% {
+        left: -200%;
+
+    }
+
+    40% {
+        left: -200%;
+
+    }
+
+
+    42% {
+        left: -300%;
+
+    }
+
+
+    54% {
+        left: -300%;
+
+    }
+
+
+    56% {
+        left: -400%;
+
+    }  
+
+    68% {
+        left: -400%;
+
+    }  
+
+ 
+
+    100% {
+        left: 0%;
+
+    }  
+}
+
+.Redline {  
+    margin-top: px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(224, 169, 169);
+}
+.flipper {
+    width: 90%;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 0px;
+}
+
+
+.image-container {
+    padding-top: 10px;
+    height: 140px;
+    width: 150px;
+    border: 1px black;
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.transition-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity:0;
+    transition: opacity 0.8s ease;
+
+}
+
+.transition-image:hover{
+    opacity:1;
+}
+
+.fade1:hover::after{
+    opacity: 0.8;
+
+}
+
+.fade1::after {
+    content: "LAN  WAN & Internet";
+    color: rgb(247, 244, 244);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(252, 6, 6);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade2:hover::after{
+    opacity: 0.8;
+
+}
+.fade2::after {
+    content: "Network Security";
+    color: rgb(253, 253, 253);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(102, 10, 3);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.fade3:hover::after{
+    opacity: 0.8;
+}
+
+.fade3::after {
+    content: "Meraki & WLC WiFi";
+    color: rgb(241, 235, 235);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(190, 14, 123);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.fade4:hover::after{
+    opacity: 0.8;
+}
+.fade4::after {
+    content: "Cloud interConnect";
+    color: rgb(253, 253, 253);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(21, 36, 245);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade5:hover::after{
+    opacity: 0.8;
+}
+
+.fade5::after {
+    content: "Always Available";
+    color: rgb(253, 253, 253);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(21, 36, 245);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+
+
+footer {
+    margin-top: 20px;
+    width:100%;
+    height: 0.1vh;
+    border-top:  #5686cf 1px solid;
+    padding-top: 0px;
+    align-content:center
+    justify-content: center;
+    text-align: center;
+}
